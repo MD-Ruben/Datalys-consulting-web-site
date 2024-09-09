@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
+import Providers from "@/providers";
 
 export default function RootLayout({
   children,
@@ -17,7 +18,7 @@ export default function RootLayout({
 
       <body className="bg-black">
         <Header />
-        {children}
+        <Providers>{children}</Providers>
         <Footer />
         <ScrollToTop />
       </body>

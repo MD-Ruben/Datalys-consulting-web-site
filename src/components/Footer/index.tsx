@@ -2,6 +2,7 @@
 import Image from "next/image";
 import ShinyButton from "@/components/magicui/shiny-button";
 import Link from "next/link";
+import * as react from 'react';
 
 const Footer = () => {
   return (
