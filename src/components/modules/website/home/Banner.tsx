@@ -3,7 +3,7 @@ import Container from "../../custom/Container";
 import CategoryList from "./CategoryList";
 import HomeSlide from "./HomeSlide";
 
-export default function Banner2() {
+export default function Banner() {
   return (
     <section>
       <Container>

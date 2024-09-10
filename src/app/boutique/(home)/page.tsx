@@ -1,4 +1,4 @@
-import Banner2 from "@/components/modules/website/home/Banner2";
+import Banner from "@/components/modules/website/home/Banner";
 import BestSellersProducts from "@/components/modules/website/home/BestSellersProducts";
 import BrandList from "@/components/modules/website/home/BrandList";
 import Cta from "@/components/modules/website/home/Cta";
@@ -14,7 +14,7 @@ import { SessionProvider } from "next-auth/react";
 export default function Home() {
   return (
     <SessionProvider>
-      <Banner2 />
+      <Banner />
       <Payments />
       <TopCategories />
       <FeaturesProducts />

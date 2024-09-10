@@ -12,7 +12,7 @@ import TopCategories from "@/components/modules/website/home/TopCategories";
 //import { mergeOpenGraph } from "../../../../lib/mergeOpenGraph";
 
 import { Metadata } from "next";
-import Banner2 from "@/components/modules/website/home/Banner2";
+import Banner from "@/components/modules/website/home/Banner";
 
 export const metadata: Metadata = {
   title: "Boutique | DATALYS Consulting",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Banner2 />
+      <Banner />
       <Payments />
       <TopCategories />
       <FeaturesProducts />
