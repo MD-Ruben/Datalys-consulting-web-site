@@ -1,3 +1,10 @@
+import {
+  FormControl,
+  FormLabel,
+  FormErrorMessage,
+  FormHelperText,
+} from "@chakra-ui/react";
+
 const Contact = () => {
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
@@ -16,20 +23,21 @@ const Contact = () => {
                 Faire face à un problème pour obtenir un devis ! <br />
                 Contactez-nous
               </p>
-              <form>
+              <FormControl isRequired>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
-                      <label
+                      <FormLabel
                         htmlFor="name"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
                         Votre nom
-                      </label>
+                      </FormLabel>
                       <input
                         type="text"
                         placeholder="Entrer votre nom"
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        disabled
                       />
                     </div>
                   </div>
@@ -39,12 +47,13 @@ const Contact = () => {
                         htmlFor="email"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
-                        Your e-mail
+                        Votre e-mail
                       </label>
                       <input
                         type="email"
                         placeholder="Enter votre adresse e-mail"
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        disabled
                       />
                     </div>
                   </div>
@@ -61,16 +70,20 @@ const Contact = () => {
                         rows={5}
                         placeholder="Entrer votre message"
                         className="border-stroke w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        disabled
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
+                    <button
+                      className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
+                      disabled
+                    >
                       Contactez-nous
                     </button>
                   </div>
                 </div>
-              </form>
+              </FormControl>
             </div>
           </div>
           <div className="relative z-10 w-full px-4 lg:w-5/12 xl:w-4/12">

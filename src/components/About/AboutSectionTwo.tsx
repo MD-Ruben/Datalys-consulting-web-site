@@ -10,10 +10,10 @@ const AboutSectionTwo = () => {
               className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] rounded-full bg-[#294666] text-center shadow-lg lg:m-0"
               data-wow-delay=".15s"
             >
-              <Image
+              <img
                 src="/images/about/8033207-nobg.png"
                 alt="about image"
-                fill
+                className="h-full w-full"
               />
             </div>
           </div>

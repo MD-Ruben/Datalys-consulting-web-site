@@ -13,7 +13,11 @@ const DomainIntegration = () => {
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
             <div className="max-w-full" data-wow-delay=".15s">
-              <SectionTitle title="Intégration" left mb="50px" />
+              <div className="mx-auto mb-14 max-w-full text-start">
+                <h2 className="font-Title mb-4 text-start text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+                  Intégration
+                </h2>
+              </div>
               <Accordion>
                 <AccordionItem
                   key="1"
@@ -63,12 +67,11 @@ const DomainIntegration = () => {
                 </AccordionItem>
               </Accordion>
               <div className="mt-4" data-wow-delay=".15s">
-                <SectionTitle
-                  title="Nos offres de prestation de service"
-                  left
-                  mb="50px"
-                />
-
+                <div className="mx-auto mb-14 max-w-full text-start">
+                  <h2 className="font-Title mb-4 text-start text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+                    Nos offres de prestation de service
+                  </h2>
+                </div>
                 <Accordion defaultExpandedKeys={["1"]}>
                   <AccordionItem
                     key="1"
@@ -109,8 +112,11 @@ const DomainIntegration = () => {
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <div className="max-w-full" data-wow-delay=".15s">
-              <SectionTitle title="Nos avantages" left mb="50px" />
-
+              <div className="mx-auto mb-14 max-w-full text-start">
+                <h2 className="font-Title mb-4 text-start text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+                  Nos avantages
+                </h2>
+              </div>
               <Accordion defaultExpandedKeys={["1"]}>
                 <AccordionItem
                   key="1"

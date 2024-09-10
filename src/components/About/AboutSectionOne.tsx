@@ -22,7 +22,7 @@ const AboutSectionOne = () => {
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
-            <div className="font-Title w-full px-4 lg:w-1/2">
+            <div className="font-Title w-full px-4 text-start lg:w-1/2">
               <SectionTitle
                 title="Exploiter les données dans l'ensemble de l'organisation."
                 paragraph="Envisager de manière synergique des catalyseurs de changement ayant un impact sur les infrastructures flexibles. Matricer rapidement des portails en temps réel plutôt que des opportunités entièrement étudiées. Mettre en œuvre de manière appropriée des infrastructures d'entreprise après des schémas à haut rendement.
@@ -70,10 +70,10 @@ const AboutSectionOne = () => {
 
             <div className="w-full px-4 lg:w-1/2">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] rounded-full bg-[#294666] shadow-lg lg:mr-0">
-                <Image
+                <img
                   src="/images/about/data_analytics3D_2.png"
                   alt="about-image"
-                  fill
+                  className="h-full w-full"
                 />
               </div>
             </div>

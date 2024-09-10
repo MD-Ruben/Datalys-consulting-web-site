@@ -4,7 +4,7 @@ import SingleTestimonial from "./SingleTestimonial";
 
 const team = [
   {
-    avatar: "/images/testimonials/unknown.jpeg",
+    image: "/images/testimonials/unknown.jpeg",
     name: "Mr xxxxxxx",
     title: "DG xxxxxx",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
@@ -12,7 +12,7 @@ const team = [
     twitter: "javascript:void(0)",
   },
   {
-    avatar: "/images/testimonials/unknown.jpeg",
+    image: "/images/testimonials/unknown.jpeg",
     name: "Mr xxxxxxx",
     title: "DG xxxxxx",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
@@ -20,7 +20,7 @@ const team = [
     twitter: "javascript:void(0)",
   },
   {
-    avatar: "/images/testimonials/unknown.jpeg",
+    image: "/images/testimonials/unknown.jpeg",
     name: "Mr xxxxxxx",
     title: "DG xxxxxx",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
@@ -63,11 +63,14 @@ const Testimonials = () => {
   return (
     <section className="relative z-10 bg-gray-light py-16 dark:bg-bg-color-dark md:py-20 lg:py-28">
       <div className="container">
-        <SectionTitle
-          title="Ce que disent nos clients"
-          paragraph="Les avis de nos clients"
-          center
-        />
+        <div className="mx-auto mb-14 max-w-[460px] text-center">
+          <h2 className="font-Title mb-4 text-center text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+            Ce que disent nos clients
+          </h2>
+          <p className="text-center text-base !leading-relaxed text-body-color md:text-lg">
+            Les avis de nos clients.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           {testimonialData.map((testimonial) => (
@@ -205,19 +208,21 @@ const Testimonials = () => {
       </div>
 
       <div className="container mt-24 px-4 text-center md:px-8">
-        <SectionTitle
-          title="Rencontrez nos experts
-"
-          paragraph="Nos experts"
-          center
-        />
+        <div className="mx-auto mb-14 max-w-[560px] text-center">
+          <h2 className="font-Title mb-4 text-center text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+            Rencontrez nos experts
+          </h2>
+          <p className="text-center text-base !leading-relaxed text-body-color md:text-lg">
+            Nos experts.
+          </p>
+        </div>
         <div className="mt-12">
           <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
             {team.map((item, idx) => (
               <li key={idx}>
                 <div className="mx-auto h-24 w-24">
                   <img
-                    src={item.avatar}
+                    src={item.image}
                     className="h-full w-full rounded-full"
                     alt=""
                   />

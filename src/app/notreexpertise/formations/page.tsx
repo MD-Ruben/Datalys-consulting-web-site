@@ -6,7 +6,7 @@ import AboutFormations from "@/components/AboutFormations";
 import DomainFormations from "@/components/DomainFormations";
 
 export const metadata: Metadata = {
-  title: "Page de formation | DATALYS Consulting",
+  title: "Formations | DATALYS Consulting",
   description: "La page de formation de DATALYS Consulting",
   // other metadata
 };
@@ -15,7 +15,7 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="La page de formation"
+        pageName="Formation"
         description="Infrastructure et analyse des données. Envisager de manière synergique des catalyseurs de changement ayant un impact sur les infrastructures flexibles."
       />
       <AboutFormations />

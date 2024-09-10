@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-5 inline-block">
-                  <Image
+                  <img
                     src="/images/logo/logo.png"
                     alt="logo"
                     width={210}
@@ -24,7 +24,7 @@ const Footer = () => {
                 </p>
                 <div className="flex items-center">
                   <a
-                    href="/"
+                    href="javascript:;"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -44,7 +44,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="javascript:;"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -60,7 +60,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="javascript:;"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -153,7 +153,7 @@ const Footer = () => {
                   Boutique
                 </h2>
                 <div className="flex">
-                  <Link href="/boutique">
+                  <Link href="javascript:;">
                     <ShinyButton text="Commandez maintenant" className="" />
                   </Link>
                 </div>
@@ -168,7 +168,7 @@ const Footer = () => {
               <span className="font-medium"> DATALYS Consulting</span>. Designed
               and Developed by
               <Link className="ml-1 hover:text-primary" href="javascript:;">
-                La victoire
+                <span className="font-medium"> LA VICTOIRE</span>
               </Link>
               .
             </p>

@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { RxArrowTopRight } from "react-icons/rx";
 import React from "react";
 import SectionTitle from "../Common/SectionTitle";
@@ -12,7 +11,11 @@ const DomainFormations = () => {
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
             <div className="max-w-full" data-wow-delay=".15s">
-              <SectionTitle title="Formations" left mb="50px" />
+              <div className="mx-auto mb-14 max-w-full text-start">
+                <h2 className="font-Title mb-4 text-start text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+                  Formations
+                </h2>
+              </div>
               <Accordion>
                 <AccordionItem
                   key="1"
@@ -44,11 +47,11 @@ const DomainFormations = () => {
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <div className="max-w-full" data-wow-delay=".15s">
-              <SectionTitle
-                title="Pourquoi apprendre avec vous ?"
-                left
-                mb="50px"
-              />
+              <div className="mx-auto mb-14 max-w-full text-start">
+                <h2 className="font-Title mb-4 text-start text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+                  Pourquoi apprendre avec vous ?
+                </h2>
+              </div>
 
               <Accordion defaultExpandedKeys={["1"]}>
                 <AccordionItem

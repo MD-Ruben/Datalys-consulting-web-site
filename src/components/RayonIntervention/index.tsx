@@ -16,14 +16,17 @@ const RayonIntervention = () => {
   return (
     <section className="py-16 md:py-20 lg:py-24">
       <div className="container">
-        <SectionTitle
-          title="Notre rayon d'intervention
-"
-          paragraph="Rechercher de manière dynamique une convergence fiable plutôt que d'améliorer les processus 24 heures sur 24 et 7 jours sur 7. Développer intrinsèquement un service à la clientèle de bout en bout sans disposer d'un grand nombre de données.
-
-"
-          center
-        />
+        <div className="mx-auto mb-14 max-w-[560px] text-center">
+          <h2 className="font-Title mb-4 text-center text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+            Notre rayon d'intervention
+          </h2>
+          <p className="text-center text-base !leading-relaxed text-body-color md:text-lg">
+            Rechercher de manière dynamique une convergence fiable plutôt que
+            d'améliorer les processus 24 heures sur 24 et 7 jours sur 7.
+            Développer intrinsèquement un service à la clientèle de bout en bout
+            sans disposer d'un grand nombre de données.
+          </p>
+        </div>
         <div className="flex flex-col items-center justify-center">
           <Swiper
             breakpoints={{

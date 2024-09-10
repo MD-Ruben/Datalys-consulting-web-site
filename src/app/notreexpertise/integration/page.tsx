@@ -6,7 +6,7 @@ import DomainIntegration from "@/components/DomainIntegration";
 import NosIntegrations from "@/components/NosIntegrations";
 
 export const metadata: Metadata = {
-  title: "Page d'intégration | DATALYS Consulting",
+  title: "Intégration | DATALYS Consulting",
   description: "La page d'intégration de DATALYS Consulting",
   // other metadata
 };
@@ -15,7 +15,7 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="La page d'intégration"
+        pageName="Intégration"
         description="Infrastructure et analyse des données. Envisager de manière synergique des catalyseurs de changement ayant un impact sur les infrastructures flexibles."
       />
       <AboutIntegration />

@@ -13,12 +13,11 @@ const DomainSection = () => {
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
             <div className="max-w-full" data-wow-delay=".15s">
-              <SectionTitle
-                title="Nos domaines d'interventions
-"
-                left
-                mb="50px"
-              />
+              <div className="mx-auto mb-14 max-w-full text-start">
+                <h2 className="font-Title mb-4 text-start text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+                  Nos domaines d'interventions
+                </h2>
+              </div>
 
               <Accordion defaultExpandedKeys={["1"]}>
                 <AccordionItem
@@ -96,13 +95,11 @@ const DomainSection = () => {
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <div className="max-w-full" data-wow-delay=".15s">
-              <SectionTitle
-                title="Détails de chaque phase
-"
-                left
-                mb="50px"
-              />
-
+              <div className="mx-auto mb-14 max-w-full text-start">
+                <h2 className="font-Title mb-4 text-start text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+                  Détails de chaque phase
+                </h2>
+              </div>
               <Accordion defaultExpandedKeys={["1"]}>
                 <AccordionItem
                   key="1"
